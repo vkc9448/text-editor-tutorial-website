@@ -1,0 +1,166 @@
+
+/*
+	The only reason there is a different file for the landing page is
+    because the landing page is quite a different layout from the other pages
+    and also uses a background image so it's easier if it has it's own
+    css file. Downloads will most likely be the same way.
+*/
+
+/*THESE ARE NEEDED TO ACCESS THE FONTS WE USE*/
+@font-face{
+	font-family: 'Junction-regular';
+	src: url(../fonts/junction/Junction-regular.otf) format("opentype");
+}
+
+@font-face {
+	font-family: 'Junction-bold';
+	src: url(../fonts/junction/Junction-bold.otf) format("opentype");
+}
+
+/*GENERIC STYLES*/
+body{
+	background: url(../images/landing-page-bg2-blur.jpg) no-repeat center center fixed;
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+	padding-top: 4.5rem;
+}
+
+/*LANDING PAGE STYLES*/
+
+h1{
+	margin: 0;
+	padding: 0;
+    font-family: 'Junction-regular';
+}
+
+h2, h3, h4, h5, h6{
+	margin: 0;
+	padding: 0;
+    font-family: "Arvo";
+}
+
+p{
+	margin: 0;
+	padding: 0;
+    font-family: 'Ubuntu';
+}
+
+.headers-wrapper{
+	background-color: rgba(0,0,0,.8);
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+.landing-title-div{
+	padding: 10px;
+    text-align: center;
+}
+
+#landing-title{
+	color: #f8f8ff;
+    margin: 0;
+}
+
+.landing-subtitle-div{
+    text-align: center;
+	margin: 10px;
+	padding-bottom: 10px;
+	color: #f8f8ff;
+}
+
+
+.landing-content-div{
+	position: relative;
+    background-color: rgba(0,0,0,.8);
+	overflow: hidden;
+    color: #f8f8ff;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+.landing-main-text{
+	margin: 10%;
+}
+
+.landing-button-wrapper{
+	text-align: center;
+}
+
+.btn-div{
+	display: inline-block;
+	margin: auto;
+	padding: 10px;
+	padding-bottom: 20px;
+	text-align: center;
+}
+
+.get-started-btn:hover{
+	background-color: rgb(242,129,95);
+	cursor: pointer;
+}
+
+.get-started-btn{
+	background-color: #B82C25;
+	text-align: center;
+	color: #f8f8ff;
+}
+
+@media (min-width: 680px){
+	.btn-div{
+		padding: 40px;
+	}
+}
+
+@media (min-width: 950px){
+
+	.headers-wrapper{
+		max-width: 60vw;
+	}
+
+	.landing-content-div{
+		position: relative;
+		max-width: 60vw;
+	}
+
+	.landing-title-div{
+		margin-left: 5%;
+		text-align: left;
+		padding-left: 0;
+		padding-top: 130px;
+	}
+
+	.landing-subtitle-div{
+		margin-left: 5%;
+		text-align: left;
+		margin-bottom: 0;
+		padding-bottom: 0;
+	}
+
+	.landing-main-text{
+		margin: 20px;
+		margin-top: 10%;
+		margin-left: 5%;
+		width: 60%;
+		font-size: 20px;
+	}
+
+	#landing-title{
+		font-size: 55px;
+	}
+
+	#landing-subtitle{
+		font-size: 35px;
+	}
+
+	.landing-button-wrapper{
+		text-align: left;
+	}
+
+	.btn-div{
+		text-align: left;
+		margin-top: 5%;
+		top: 60%;
+	}
+}
