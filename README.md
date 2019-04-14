@@ -13,7 +13,7 @@ Known bugs:
 
 Features:
 	All content is loaded and generated through php functions.
-	Everyting for every page is includes.
+	Everything for every page is includes.
 	Site structure allows for rapid expansion.
 	Fully compatiable mobile site.
 	Slick visual design that allows for easy navigation.
